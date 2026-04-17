@@ -1,119 +1,125 @@
-<!DOCTYPE HTML>
-<html>
-    <head>
-        <title>Mi Portafolio - Astrofísica</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-    </head>
-    <body class="homepage is-preload">
-        <div id="page-wrapper">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Sitio Astral</title>
 
-            <section id="header">
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-                    <div id="logo-container">
-                             <a href="index.html">
-                                <img src="Images/AstrofisicaUC_04.png" alt="Logo Astrofísica" style="max-width: 200px;">
-                             </a>
-                             <h1><a href="index.html">Mi Sitio</a></h1>
-                        </div>
+        body {
+            font-family: 'Helvetica', Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f2f5;
+            color: #333;
+        }
 
-                    <nav id="nav">
-                            <ul>
-                                <li class="current"><a href="index.html">Inicio</a></li>
-                                <li><a href="#main">Investigación</a></li>
-                                <li><a href="#footer">Contacto</a></li>
-                            </ul>
-                        </nav>
+        /* 1. Portada Superior (Hero) */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                        url('Images/ia_uc.jpeg'); /* Imagen de la Tierra/Espacio */
+            background-size: cover;
+            background-position: center;
+            height: 450px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
 
-                    <section id="banner">
-                            <header>
-                                <h2>Bienvenido</h2>
-                                <p>Explorando el cosmos y los datos estelares.</p>
-                            </header>
-                        </section>
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
 
-                    <section id="intro" class="container">
-                            <div class="row">
-                                <div class="col-12">
-                                    <section class="first">
-                                        <header>
-                                            <h2>Sobre mí</h2>
-                                        </header>
-                                        <p>Aquí puedes escribir una breve introducción sobre tu trabajo en astronomía o investigación actual.</p>
-                                    </section>
-                                </div>
-                            </div>
-                        </section>
+        /* 2. El Logo (Debajo de la portada) */
+        .main-content {
+            max-width: 900px;
+            margin: -60px auto 40px; /* Sube un poco para entrar en la portada */
+            background: white;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            text-align: center;
+            position: relative;
+        }
 
-                </section>
+        .logo-img {
+            max-width: 220px;
+            height: auto;
+            margin-bottom: 25px;
+            transition: transform 0.3s ease;
+        }
 
-            <section id="main">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
+        .logo-img:hover {
+            transform: scale(1.05);
+        }
 
-                                <section>
-                                        <header class="major">
-                                            <h2>Proyectos Destacados</h2>
-                                        </header>
-                                        <div class="row">
-                                            <div class="col-4 col-6-medium col-12-small">
-                                                <section class="box">
-                                                    <a href="#" class="image featured"><img src="images/pic02.jpg" alt="Proyecto 1" /></a>
-                                                    <header>
-                                                        <h3>Título del Proyecto</h3>
-                                                    </header>
-                                                    <p>Descripción corta de lo que hiciste (ej. análisis de tránsitos planetarios).</p>
-                                                </section>
-                                            </div>
-                                            </div>
-                                    </section>
+        /* 3. Botón para Games */
+        .btn-container {
+            margin-top: 40px;
+        }
 
-                            </div>
-                        </div>
-                    </div>
-                </section>
+        .btn-games {
+            display: inline-block;
+            background: #1a2a6c; /* Azul oscuro espacial */
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(26, 42, 108, 0.3);
+        }
 
-            <section id="footer">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12">
-                                <section>
-                                    <header>
-                                        <h2>Contacto</h2>
-                                    </header>
-                                    <ul class="contact">
-                                        <li>
-                                            <h3>Ubicación</h3>
-                                            <p>Santiago, Chile</p>
-                                        </li>
-                                        <li>
-                                            <h3>Email</h3>
-                                            <p><a href="#">tuemail@ejemplo.com</a></p>
-                                        </li>
-                                    </ul>
-                                </section>
-                            </div>
-                            <div class="col-12">
-                                <div id="copyright">
-                                    <ul class="links">
-                                        <li>&copy; Todos los derechos reservados.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+        .btn-games:hover {
+            background: #b21f1f; /* Cambia a rojo al pasar el mouse */
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(178, 31, 31, 0.4);
+        }
 
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <h1>Mi Portafolio de Astronomía</h1>
+        <p>Investigación, datos y simulación</p>
+    </header>
+
+    <main class="main-content">
+        <img src="Images/AstrofisicaUC_04.png" alt="Logo Astrofísica" class="logo-img">
+        
+        <div class="intro">
+            <h2>Bienvenido a mi plataforma</h2>
+            <p>Este espacio está dedicado a la divulgación científica y el desarrollo de herramientas interactivas.</p>
         </div>
 
-        <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/jquery.dropotron.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
+        <div class="btn-container">
+            <a href="games.html" class="btn-games">🚀 Entrar a Sección Games</a>
+        </div>
+    </main>
 
-    </body>
+    <footer>
+        <p>&copy; 2026 - CATA / Astrofísica UC</p>
+    </footer>
+
+</body>
 </html>
