@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Sitio Astral</title>
+    <title>Estudiantes IA-UC</title>
 
     <style>
-        /* Reset básico */
         * {
             margin: 0;
             padding: 0;
@@ -20,79 +19,69 @@
             color: #333;
         }
 
-        /* 1. Portada Superior (Hero) */
+        /* 1. Portada - Subí la altura a 500px para que luzca más */
         .hero {
             background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
                         url('Images/ia_uc.jpeg'); 
             background-size: cover;
             background-position: center;
-            height: 450px;
+            height: 500px; 
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             color: white;
             text-align: center;
-            padding: 20px;
         }
 
         .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
         }
 
-        /* 2. El Logo (Debajo de la portada) */
+        /* 2. Bloque Blanco - Quitamos el margen negativo para que baje */
         .main-content {
             max-width: 900px;
-            margin: -30px auto 40px; 
+            margin: 40px auto; /* Cambiado de -30px a 40px para que baje de la foto */
             background: white;
-            padding: 50px;
+            padding: 60px 50px;
             border-radius: 20px;
             box-shadow: 0 15px 35px rgba(0,0,0,0.1);
             text-align: center;
-            position: relative;
         }
 
         .logo-img {
-            max-width: 220px;
+            max-width: 250px;
             height: auto;
-            margin-bottom: 25px;
-            transition: transform 0.3s ease;
+            margin-bottom: 40px; /* Más espacio bajo el logo */
         }
 
-        .logo-img:hover {
-            transform: scale(1.05);
-        }
-
-        /* 3. Botón para Games */
+        /* 3. Botón Games */
         .btn-container {
-            margin-top: 100px;
+            margin-top: 60px; /* Espacio generoso antes del botón */
         }
 
         .btn-games {
             display: inline-block;
-            background: #1a2a6c; /* Azul oscuro espacial */
+            background: #1a2a6c;
             color: white;
-            padding: 18px 40px;
+            padding: 20px 50px;
             text-decoration: none;
             border-radius: 50px;
             font-weight: bold;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             transition: all 0.3s ease;
             box-shadow: 0 4px 15px rgba(26, 42, 108, 0.3);
         }
 
         .btn-games:hover {
-            background: #b21f1f; /* Cambia a rojo al pasar el mouse */
-            transform: translateY(-3px);
-            box-shadow: 0 6px 20px rgba(178, 31, 31, 0.4);
+            background: #b21f1f;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(178, 31, 31, 0.4);
         }
 
         footer {
             text-align: center;
-            padding: 30px;
-            font-size: 0.9rem;
+            padding: 40px;
             color: #888;
         }
     </style>
@@ -101,19 +90,18 @@
 
     <header class="hero">
         <h1>Estudiantes IA-UC</h1>
-        
     </header>
 
     <main class="main-content">
         <img src="Images/AstrofisicaUC_04.png" alt="Logo Astrofísica" class="logo-img">
         
         <div class="intro">
-            <h2></h2>
-            <p></p>
+            <h2>Portal de Investigación</h2>
+            <p>Bienvenido al espacio de trabajo de Astrofísica e Inteligencia Artificial.</p>
         </div>
 
         <div class="btn-container">
-            <a href="games.html" class="btn-games"> Games</a>
+            <a href="games.html" class="btn-games">🕹️ Entrar a Games</a>
         </div>
     </main>
 
