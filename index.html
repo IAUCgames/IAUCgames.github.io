@@ -41,42 +41,49 @@
         /* 2. Logo */
         .logo-wrapper {
             text-align: center;
-            margin: 40px auto;
+            margin-top: 50px;
         }
 
         .logo-img {
-            width: 300px; /* Tamaño ajustado para que no sea gigante */
+            width: 300px;
             height: auto;
-            transition: transform 0.3s ease;
         }
 
-        /* 3. Recuadro Principal (Corregido) */
-        .main-content {
-            max-width: 800px; 
-            margin: 0 auto 60px; /* Centrado horizontal automático */
-            background: white; /* Blanco para mejor contraste */
-            padding: 50px;
-            border-radius: 20px;
-            border: 1px solid #e0d0e0; /* Un borde sutil que combina con el lila/morado */
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-            text-align: center; /* ESTO centra todo el texto adentro */
+        /* 3. Contenedor de Texto fuera del cuadro */
+        .text-container {
+            max-width: 800px;
+            margin: 30px auto; /* Espacio entre logo y cuadro */
+            text-align: center;
+            padding: 0 20px;
         }
 
         .welcome-text {
-            font-size: 1.1rem;
-            color: #555;
-            margin-bottom: 30px;
+            font-size: 1.2rem;
+            color: #444;
+            font-weight: 300;
+        }
+
+        /* 4. Recuadro Blanco (Ahora solo para el botón) */
+        .main-content {
+            max-width: 600px; 
+            margin: 0 auto 60px; 
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid #e0d0e0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            text-align: center;
         }
 
         .intro h2 {
             color: #6E0053;
-            margin-bottom: 15px;
-            font-size: 2rem;
+            margin-bottom: 10px;
+            font-size: 1.8rem;
         }
 
-        /* 4. Botón Games */
+        /* 5. Botón Games */
         .btn-container {
-            margin-top: 40px;
+            margin-top: 30px;
         }
 
         .btn-games {
@@ -93,7 +100,7 @@
         }
 
         .btn-games:hover {
-            background: #4a0038; /* Un morado más oscuro al pasar el mouse */
+            background: #4a0038;
             transform: translateY(-3px);
         }
 
@@ -114,18 +121,17 @@
         <img src="Images/AstrofisicaUC_04.png" alt="Logo Astrofísica" class="logo-img">
     </div>
 
-    <main class="main-content">
-        
+    <div class="text-container">
         <p class="welcome-text">
             Welcome to the video game repository of the Instituto de Astrofísica at Universidad Católica. 
             This space features a collection of video games created by our students, promoting creativity and innovation.
         </p>
+    </div>
 
-        <hr style="border: 0; border-top: 1px solid #eee; margin-bottom: 30px;">
-
+    <main class="main-content">
         <div class="intro">
             <h2>Videogames Portal</h2>
-            <p>Click the button below to explore our game collection.</p>
+            <p>Select an option to start your journey</p>
         </div>
 
         <div class="btn-container">
